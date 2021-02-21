@@ -1,0 +1,29 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="container">
+            <div class="col-md-9">
+                <h1 class="font-weight-bold">{{ book.nombre }}</h1>
+                <div class="row">
+                    <div class="col-md-5">
+                        <img src="{{ book.caratula }}" alt="" class="imgProducto">
+                    </div>
+                    <div class="col-md-7 d-flex align-items-start flex-column bd-highlight">
+                    <div class="mb-auto p-2">{{ book.descripcion }}</div>
+                    <div class="p-2 text-info font-weight-bold">Valor unitario {{ book.valorUnitario | currency }}</div>
+                    <div class="p-2 w-100">Cantidad <input type="text" name="cantidad" id="cantidad" class="cantidad" > <hr> </div>
+                    <div class="p-2 w-100 text-info font-weight-bold">
+                        <div class="row">
+                        <div class="col-md-6 d-flex justify-content-start">
+                            <h4>Total $ 50.000,00</h4>
+                        </div>
+                        <div class="col-md-6 d-flex justify-content-end">
+                            <button class="btn btn-info"><i class="fas fa-shopping-cart"></i> Añadir al Carrito</button>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

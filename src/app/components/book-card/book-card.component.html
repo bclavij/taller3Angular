@@ -1,0 +1,25 @@
+<div class="border producto">
+    <div class="row">
+        <div class="col-12">
+            <h4>{{ book.nombre }}</h4>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-5">
+            <img src="{{ book.caratula }}" alt="libro" class="imgProducto">
+        </div>
+        <div class="col-7 d-flex align-items-start flex-column pl-0">
+            <div class="d-flex w-100 justify-content-end text-info mb-auto">
+            <h5 class="font-weight-bold">{{ book.valorUnitario | currency}}</h5>
+            </div>
+            <a [routerLink]="['/libros', book._id]" class="btn btn-info w-100">
+            <fa-icon [icon]="faEye"></fa-icon> Ver 
+            </a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            {{ book.descripcion }}
+        </div>
+    </div>
+</div>
