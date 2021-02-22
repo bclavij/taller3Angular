@@ -1,1 +1,29 @@
-<p>sign-in works!</p>
+<div class="row">
+    <div class="container">
+      
+      <!-- Productos -->
+      <div class="row my-4">
+        <div class="d-flex w-100 justify-content-center">
+          <div class="col-md-6 border producto">
+            <form id="sign-up-form" class="needs-validation" [formGroup]="signInForm" (ngSubmit)="onSubmit()">
+                <div class="form-row titulo">
+                    <h4 class="text-info w-100 font-weight-bold">Inicio de Sesión</h4><br>
+                </div>
+                <div class="form-group">
+                    <label for="client_email">Correo Electrónico</label>
+                    <input type="text" id="client_email" class="form-control" formControlName="correo" required />
+                  </div>
+            
+                  <div class="form-group">
+                    <label for="client_password">Contraseña</label>
+                    <input type="password" id="client_password" class="form-control" formControlName="contrasena" minlength="6" required />
+                  </div>
+                <div class="d-flex w-100 justify-content-center">
+                    <button type="submit" class="btn btn-info">Iniciar Sesión</button>
+                </div>
+            </form>                
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

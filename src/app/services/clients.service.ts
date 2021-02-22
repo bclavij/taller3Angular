@@ -12,4 +12,8 @@ export class ClientsService {
     return this.http.post('http://localhost:3000/clients', client)
   }
 
+  login(client: Object) {
+    return this.http.get('http://localhost:3000/clients/auth/login', client)
+  }
+
 }
